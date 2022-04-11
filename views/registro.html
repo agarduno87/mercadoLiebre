@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styleregistro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Registro</title>
+</head>
+
+<body>
+
+
+    <form action="/register" method="POST">
+
+
+
+        <header class="header">
+            <div class="logo">
+                <img src="/img/logo-mercado-liebre.svg" alt="Logo Mercado Liebre">
+            </div>
+            <h2 class='titulo'>Registro de nuevos usuarios</h2>
+        </header>
+
+        <section class="menu">
+
+            <div class='clase1'>
+                <label for="nombre">Nombre(s): </label>
+                <input class='casilla' type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+            </div>
+
+
+            <div class='clase1'>
+                <label for="apellido">Apellido(s): </label>
+                <input class='casilla' type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+            </div>
+
+
+            <div class='clase1'>
+                <label for="domicilio">Domicilio: </label>
+                <input class='casilla' type="text" name="domicilio" id="domicilio" placeholder="Ingrese su nombre">
+            </div>
+
+
+            <div class='clase1'>
+                <label for="usuario">Escribe tu nombre de usuario: </label>
+                <input class='casilla' type="text" name="usuario" id="usuario" placeholder="Ingrese su usuario">
+            </div>
+
+
+            <div class="clase1">
+                <label>E-mail: </label>
+                <input class='casilla' type="email" name="email" id="email" placeholder="Ingrese su e-mail">
+            </div>
+
+
+            <div class="clase1">
+                <label>Elige tu contraseña: </label>
+                <input class='casilla' type="password" name="password" id="password"
+                    placeholder="Ingrese su contraseña">
+            </div>
+
+
+            <div class="clase1">
+                <label>Confirma tu contraseña: </label>
+                <input class='casilla' type="password" name="password" id="password"
+                    placeholder="Confirme su contraseña">
+            </div>
+
+
+            <div class="clase1">
+                <label>¿Quieres vender o comprar?</label>
+            </div>
+
+
+            <div class="clase1">
+                <input type="radio" value="vender" name="vender" id="vender">
+                <label for="vender">Vender</label>
+                <input type="radio" value="comprar" name="comprar" id="comprar">
+                <label for="comprar">Comprar</label>
+            </div>
+
+
+            <div class="clase1">
+                <label>Ayúdanos a elegir las mejores opciones para ti, ¿Te interesa lo siguiente?</label>
+            </div>
+
+
+            <div class="clase1">
+                <input type="checkbox" value="electronica" name="electronica" id="electronica">
+                <label for="electronica">Electrónica</label>
+                <input type="checkbox" value="moda" name="moda" id="moda">
+                <label for="moda">Moda</label>
+                <input type="checkbox" value="deportes" name="deportes" id="deportes">
+                <label for="deportes">Deportes</label>
+            </div>
+
+
+            <section class='condiciones'>
+                <p>Estoy de acuerdo con los </p><a href="/terminosycondiciones">Términos y
+                    condiciones</a>
+            </section>
+        </section>
+
+
+        <div class="botones">
+
+            <button class="boton" type="submit"><a href="/">Registrarse</a></button>
+            <button class="boton" type="reset">Borrar</button>
+        </div>
+
+        <p class='cuenta'><a href="/login">Ya tengo cuenta</a></p>
+
+    </form>
+
+</body>
+
+</html>
